@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:50px ;
+    background-color: #222;
+
+}
+
+div
+{
+    
+    
+}
+.head
+{
+    margin-bottom: 50px;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+}
+/* .stick
+{
+    position: sticky;
+    top: 50px;
+    background-color: aqua;
+} */
+
+p
+{
+    text-align: center;
+    color: rgb(194, 187, 187);
+
+}
+
+/*//////////////////////////        Input       ///////////////////////////*/
+
+
+.container
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+    /* text-align: center; */
+    
+   
+}
+
+.totalPrice
+{
+    /* text-align: center; */
+}
+
+/* .totalPrice >input 
+{
+    display: inline-block;
+    width: 16%;
+} */
+
+.totalPrice input 
+{
+    display: inline-block;
+    width: 20%;
+}
+
+.input 
+{
+    /* text-align: center; */
+}
+
+input
+{
+    
+    display: block;
+    /* margin: auto; */
+    width: 100%;
+    height:50px;
+    border: none;
+    border-radius: .5cap;
+
+    color: rgb(220, 220, 220);
+    background-color: #141313;
+    font-size: 17PX;
+    margin: 8px auto ;
+
+    padding-left: 10px;
+    /* margin-left: 20px; */
+
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: rgb(10, 76, 85);
+}
+
+input:focus
+{
+    background-color: #010101;
+    /* border: 1px 0 0 5px solid rgb(210, 207, 207); */
+    
+    outline: none;
+    transform: scale(1.05);
+    /* border-color: aqua;
+    border-style: solid;
+    border-width: 5px; */
+
+
+}
+
+
+
+
+
+
+*::placeholder
+{
+    padding-left: 10px;
+}
+
+#total
+{
+    background-color: rgb(14, 20, 20);
+    color: rgb(199, 219, 219);
+    padding: 11px;
+    border-radius: 10%;
+    font-weight: bold;
+    
+}
+
+#total::before
+{
+    content: 'Total : ';
+}
+
+
+button
+{
+    width: 100%;
+    height: 50px;
+    background-color:#111 ;
+    font-size: 17px;
+    font-weight: bold;
+    border-style: none;
+    border-radius:5cap ;
+    cursor: pointer;
+    color: white;
+    transition: .5s  ;
+    background-color:rgb(7, 140, 140) ;
+
+    /* border: 2px non #888686; */
+}
+button:hover
+{
+    letter-spacing: 2px;
+    background-color:rgb(20, 199, 199) ;
+
+}
+
+
+
+/*///////////////////////       OutPut          /////////////////////////////*/
+
+.buttonSearch
+{
+    display: flex;
+    justify-content:  space-between;
+}
+
+.buttonSearch button
+{
+    width: 45%;
+    
+}
+
+#DeleteAllDiv
+{
+    margin: 10px auto;
+    display: none;
+}
+
+
+table
+{
+    margin: 30px 0 ;
+    width: 100%;
+    text-align: center;
+    color: rgb(225, 225, 225);
+    
+
+}
+
+table th
+{
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+table th,td 
+{
+    padding: 10px;
+
+}
+
+/* #update
+{
+    transform:none;
+    letter-spacing: 0;
+} */
+
+table  tbody tr td button:hover
+{
+    transform:scale3d(1.05);
+    letter-spacing: 0;
+    color: #011c22;
+    transition: .5s;
+}

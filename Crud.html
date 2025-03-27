@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Crud System create, add , delete , update">
+        <title> Crud System</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- Head -->
+            <div class="head">
+                <h1 class="stick"> CRUD </h1>
+                <p>Create Remove Update Delete</p>
+
+            </div>
+
+            <!-- Input -->
+            <div class="input">
+
+                <input id="title" type="text" placeholder="title">
+
+                <div class="totalPrice">
+                    <input  id="price"  onkeyup=" SetTotal()" type="number"placeholder="price">
+                    <input  id="tax" onkeyup=" SetTotal()" type="number"placeholder="tax">
+                    <input  id="adds"  onkeyup=" SetTotal()"type="number"placeholder="adds">
+                    <input  id="discount" onkeyup=" SetTotal()" type="number"placeholder="discount">
+                    <small  id="total"> </small>
+                    <!-- <label>Total:     </label> -->
+                </div>
+               
+                <input id="count" type="number"placeholder="count">
+                <input id="category" type="text"placeholder="text"> 
+
+                <button id="submit"> Add </button>
+
+
+             </div>
+
+
+            <!-- Output -->
+            <div class="output">
+
+                <div class="searchBlock"> 
+
+                    <input id="searchInput" onkeyup="Search(this.value)" type="text" placeholder="Search">
+                    
+                    <div class="buttonSearch"> 
+                        <button id="searchByName" onclick="SearchMood(this.id)">Search By Name</button>
+                        <button id="searchByCategory" onclick="SearchMood(this.id)">Search By Category</button>
+                    </div>
+                    
+
+
+                
+                </div>
+
+                <div id="DeleteAllDiv">
+
+                    <button id="DeleteAllBtn" onclick="DeleteAll()"> Delete All  </button>
+
+
+                </div>
+
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+
+                    <tbody id="tbody">
+
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>samsung</td>
+                            <td>1500</td>
+                            <td>100</td>
+                            <td>50</td>
+                            <td>75</td>
+                            <td>10000</td>
+                            <td>Mobile</td>
+                            <td> <button id="update" >update</button> </td>
+                            <td> <button id="delete" onclick="DeleteProduct('${i}')">delete</button> </td>
+                        </tr> -->
+
+                     
+
+                    
+
+
+                    </tbody>
+
+
+
+                </table>
+            </div>
+
+
+
+
+
+
+            
+
+        </div> 
+
+
+        <script src="CrudApp.js"></script>
+    </body>
+
+</html>
