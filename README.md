@@ -32,5 +32,5 @@ Check out the live version of the app here:
 ## 📥 Clone & Run Locally
 To run this project on your local machine:
 ```sh
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/osamaabukhaber/CRUD-JS-.git
+cd CRUD-JS-
